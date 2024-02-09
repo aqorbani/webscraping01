@@ -16,5 +16,10 @@ data_json = """
 # with open("file.json", "w") as file:
 #     json.dump(data, file, indent=4)
 
-data = json.loads(data_json)
+# data = json.loads(data_json)
+# print(data)
+
+with open("file.json", "r") as file:
+    data = json.load(file)
+
 print(data)
