@@ -7,6 +7,9 @@ data = {
     "children": None
 }
 
-data_to_json = json.dumps(data)
+# data_to_json = json.dumps(data)
+#
+# print(data_to_json)
 
-print(data_to_json)
+with open("file.json", "w") as file:
+    json.dump(data, file, indent=4)
